@@ -1,5 +1,6 @@
 import "./App.css";
- 
+import Footer from "./components/Footer";
+
 function App() {
   return (
     <div className="container">
@@ -11,9 +12,12 @@ function App() {
         <p>Studentnummer: 2212288</p>
         <p>Klas: 25B</p>
       </div>
+      <Footer />
     </div>
   );
 }
  
 export default App;
+
+
  
