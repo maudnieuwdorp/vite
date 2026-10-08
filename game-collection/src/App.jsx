@@ -12,7 +12,7 @@ function App() {
  <p>Studentnummer: 2212288</p> 
  
  <p>Klas: 25b</p> 
- </> 
+ </>  
  ); 
 } 
  
