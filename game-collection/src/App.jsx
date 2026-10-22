@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./App.css";
-import GameCard from "./components/GameCard"; // Pas het pad aan als je GameCard ergens anders staat
+import GameCard from "./components/GameCard"; 
+import games from "./components/games.json";
+
 
 function App() {
   // State voor het opslaan van de zoektekst
@@ -18,6 +20,7 @@ function App() {
   ]);
 
   return (
+    
     <div className="app-container">
       <h1>🎮 My Game Collection</h1>
 
@@ -48,4 +51,6 @@ function App() {
   );
 }
 
+
 export default App;
+
