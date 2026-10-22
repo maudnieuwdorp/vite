@@ -1,95 +1,75 @@
+/* Container styling voor de hele applicatie */
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Opdracht 5: Styling voor het zoekveld */
+.search-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 25px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box; /* Zorgt ervoor dat padding netjes binnen het vak valt */
+}
+
+/* Flexbox of Grid layout voor de game cards */
+.games-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 body {
-
     background-color: #f5f5f5;
-
     font-family: Arial, Helvetica, sans-serif;
-
 }
  
-.container {
 
-    max-width: 900px;
-
-    margin: 40px auto;
-
-    background: white;
-
-    padding: 35px;
-
-    border-radius: 12px;
-
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
-
-}
  
 .app-title {
-
     color: #6e25eb;
-
     border-bottom: 3px solid #6e25eb;
-
     padding-bottom: 12px;
-
     margin-bottom: 30px;
-
 }
  
-.game-list {
 
-    margin-top: 30px;
-
-}
  
 .game-card {
-
     background-color: #fafafa;
-
     border: 1px solid #dddddd;
-
     border-radius: 10px;
-
     padding: 15px;
-
     margin-bottom: 15px;
-
     transition: 0.2s ease;
-
 }
  
 .game-card:hover {
-
     box-shadow: 0 4px 12px rgba(0,0,0,.08);
-
 }
  
 .game-card h2 {
-
     margin-bottom: 8px;
-
     color: #333;
-
 }
  
 .game-card p {
-
     color: #666;
-
 }
  
 footer {
-
     margin-top: 35px;
-
     padding-top: 20px;
-
     border-top: 1px solid #dddddd;
-
     color: #777;
-
     font-size: 14px;
-
 }
-
+ 
 .favorite-button {
     margin-top: 12px;
     padding: 8px 14px;
@@ -100,8 +80,7 @@ footer {
     cursor: pointer;
     transition: background-color .2s;
 }
-
+ 
 .favorite-button:hover {
     background-color: #5b1fd0;
 }
- 

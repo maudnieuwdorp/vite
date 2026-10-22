@@ -1,9 +1,14 @@
 import { useState } from "react";
+
 function GameCard(props) {
 
+
     const [favorite, setFavorite] = useState(false);
+
+    
     
     return (
+
         
 <div className="game-card">
 <h2>{props.title}</h2>
