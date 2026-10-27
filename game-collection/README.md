@@ -1,5 +1,13 @@
 # React + Vite
 
+## My Game Collection
+
+De collectie toont games met hun genre, platform, developer en multiplayerinformatie. Zoek op titel, genre, platform of developer en gebruik de favorietenknop om games te markeren.
+
+De favorietenknop is mijn bonusuitbreiding. Zo kan ik snel aangeven welke games ik het liefst speel en ze herkenbaar maken in mijn collectie.
+
+Start de applicatie lokaal met `npm run dev`. Controleer wijzigingen met `npm run lint` en maak een productieversie met `npm run build`.
+
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
 Currently, two official plugins are available:

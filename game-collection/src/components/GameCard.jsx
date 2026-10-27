@@ -1,44 +1,53 @@
 import { useState } from "react";
-
+ 
 function GameCard(props) {
-
-
-    const [favorite, setFavorite] = useState(false);
-
-
-
-    return (
-
-
-        <div className="game-card">
-            {props.image && (
-                <img
-                    src={`/images/${props.image}`}
-                    alt={props.title}
-                    className="game-image"
-                />
-            )}
-            <h2>{props.title}</h2>
-
-            <p>Platform: {props.platform}</p>
-
-            <p>Genre: {props.genre}</p>
-
-            <p>Rating: ⭐ {props.rating}</p>
-
-            <p>Jaar: {props.year}</p>
-
-            <button
-                className="favorite-button"
-                onClick={() => setFavorite(!favorite)}
-            >
-
-                {favorite ? "❤️ Favoriet" : "🤍 Favoriet"}
-
-            </button>
-
+  const [favorite, setFavorite] = useState(false);
+ 
+  return (
+    <article className="game-card">
+      {props.image && (
+        <img
+          src={`/images/${props.image}`}
+          alt={`Afbeelding bij ${props.title}`}
+          className="game-image"
+        />
+      )}
+      <div className="game-card-content">
+        <div className="game-card-heading">
+          <h2>{props.title}</h2>
+          <span className="rating">⭐ {props.rating}</span>
         </div>
-    );
+        <p className="game-genre">{props.genre}</p>
+        <dl className="game-details">
+          <div>
+            <dt>Platform</dt>
+            <dd>{props.platform}</dd>
+          </div>
+          <div>
+            <dt>Developer</dt>
+            <dd>{props.developer}</dd>
+          </div>
+          <div>
+            <dt>Multiplayer</dt>
+            <dd>{props.multiplayer}</dd>
+          </div>
+          <div>
+            <dt>Jaar</dt>
+            <dd>{props.year}</dd>
+          </div>
+        </dl>
+        <button
+          className="favorite-button"
+          type="button"
+          aria-pressed={favorite}
+          onClick={() => setFavorite(!favorite)}
+        >
+          {favorite ? "❤️ Favoriet" : "🤍 Favoriet"}
+        </button>
+      </div>
+    </article>
+  );
 }
-
+ 
 export default GameCard;
+ 

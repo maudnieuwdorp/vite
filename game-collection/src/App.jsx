@@ -1,45 +1,69 @@
 import { useState } from "react";
 import "./App.css";
+import Footer from "./components/Footer";
 import GameCard from "./components/GameCard";
-import games from "./components/data/games.json";
-
+import gamesData from "./components/data/games.json";
+ 
 function App() {
-  // State voor het opslaan van de zoektekst
   const [search, setSearch] = useState("");
-
+  const [games] = useState(gamesData);
+  const searchTerm = search.trim().toLowerCase();
+  const filteredGames = games.filter((game) =>
+    [game.title, game.genre, game.platform, game.developer].some((value) =>
+      String(value ?? "").toLowerCase().includes(searchTerm)
+    )
+  );
+ 
   return (
     <div className="app-container">
-      <h1>🎮 My Game Collection</h1>
-
-      {/* Opdracht 2 & 5: Zoekveld met onChange en className */}
+      <header className="site-header">
+        <p className="eyebrow">JOUW GAMEBIBLIOTHEEK</p>
+        <h1>🎮 My Game Collection</h1>
+        <p className="site-tagline">
+          Favoriete werelden, verzameld op één plek.
+        </p>
+      </header>
+ 
       <input
         className="search-input"
         type="text"
-        placeholder="Zoek een game..."
+        aria-label="Zoek op titel, genre, platform of developer"
+        placeholder="Zoek op titel, genre, platform of developer..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
-
-      {/* Opdracht 3: Gefilterde lijst tonen met filter() en map() */}
+ 
+      <p className="results-count" aria-live="polite">
+        {filteredGames.length} {filteredGames.length === 1 ? "game" : "games"}
+        {searchTerm && " gevonden"}
+      </p>
+ 
       <div className="games-list">
-        {games
-          .filter((game) =>
-            game.title.toLowerCase().includes(search.toLowerCase())
-          )
-          .map((game) => (
+        {filteredGames.length > 0 ? (
+          filteredGames.map((game) => (
             <GameCard
               key={game.id}
               title={game.title}
               platform={game.platform}
               genre={game.genre}
+              developer={game.developer}
+              multiplayer={game.multiplayer}
               rating={game.rating}
               year={game.year}
               image={game.image}
             />
-          ))}
+          ))
+        ) : (
+          <p className="empty-state">
+            Geen games gevonden. Probeer een andere zoekterm.
+          </p>
+        )}
       </div>
+ 
+      <Footer />
     </div>
   );
 }
-
+ 
 export default App;
+ 

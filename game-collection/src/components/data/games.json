@@ -4,6 +4,8 @@
     "title": "⛏️ Minecraft",
     "platform": "PC",
     "genre": "Sandbox",
+    "developer": "Mojang Studios",
+    "multiplayer": "Ja, online",
     "rating": 9.5,
     "year": 2011
   },
@@ -12,6 +14,8 @@
     "title": "🏎️ Mario Kart World",
     "platform": "Nintendo Switch 2",
     "genre": "Race",
+    "developer": "Nintendo",
+    "multiplayer": "Ja, lokaal en online",
     "rating": 9.3,
     "year": 2025
   },
@@ -20,6 +24,8 @@
     "title": "🚗 Rocket League",
     "platform": "PlayStation 5",
     "genre": "Sport",
+    "developer": "Psyonix",
+    "multiplayer": "Ja, online",
     "rating": 8.9,
     "year": 2015
   },
@@ -28,6 +34,8 @@
     "title": "⚽ EA Sports FC 26",
     "platform": "PlayStation 5",
     "genre": "Sport",
+    "developer": "EA Vancouver",
+    "multiplayer": "Ja, lokaal en online",
     "rating": 8.6,
     "year": 2025
   },
@@ -36,6 +44,8 @@
     "title": "🗡️ The Legend of Zelda",
     "platform": "Nintendo Switch",
     "genre": "Adventure",
+    "developer": "Nintendo",
+    "multiplayer": "Nee",
     "rating": 9.8,
     "year": 2023
   },
@@ -44,6 +54,8 @@
     "title": "🚌 Fortnite",
     "platform": "PC",
     "genre": "Battle Royale",
+    "developer": "Epic Games",
+    "multiplayer": "Ja, online",
     "rating": 8.7,
     "year": 2017
   },
@@ -52,6 +64,8 @@
     "title": "🤖 Cyberpunk 2077",
     "platform": "PC",
     "genre": "RPG",
+    "developer": "CD Projekt Red",
+    "multiplayer": "Nee",
     "rating": 8.8,
     "year": 2020
   },
@@ -60,6 +74,8 @@
     "title": "🤠 Red Dead Redemption 2",
     "platform": "PC",
     "genre": "Adventure",
+    "developer": "Rockstar Games",
+    "multiplayer": "Nee",
     "rating": 9.9,
     "year": 2018
   },
@@ -68,6 +84,8 @@
     "title": "🚔 GTA V",
     "platform": "PC",
     "genre": "Action",
+    "developer": "Rockstar North",
+    "multiplayer": "Ja, online",
     "rating": 9.8,
     "year": 2013
   },
@@ -76,6 +94,8 @@
     "title": "👑 Elden Ring",
     "platform": "PlayStation 5",
     "genre": "RPG",
+    "developer": "FromSoftware",
+    "multiplayer": "Ja, online",
     "rating": 9.7,
     "year": 2022,
     "image": "eldenring.jpg"
@@ -85,7 +105,10 @@
     "title": "🚀 ROC Amstelland Dev Challenge",
     "platform": "ESP32 / Raspberry Pi / Arduino",
     "genre": "Developer Event",
+    "developer": "ROC Amstelland",
+    "multiplayer": "Ja, in teams",
     "rating": 10.0,
     "year": 2027
   }
 ]
+ 
