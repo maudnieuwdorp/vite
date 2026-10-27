@@ -1,8 +1,8 @@
 import { useState } from "react";
- 
+
 function GameCard(props) {
   const [favorite, setFavorite] = useState(false);
- 
+
   return (
     <article className="game-card">
       {props.image && (
@@ -29,11 +29,11 @@ function GameCard(props) {
           </div>
           <div>
             <dt>Multiplayer</dt>
-            <dd>{props.multiplayer}</dd>
+            <dd>{props.multiplayer ? "Ja" : "Nee"}</dd>
           </div>
           <div>
             <dt>Jaar</dt>
-            <dd>{props.year}</dd>
+            <dd>{props.jaar}</dd>
           </div>
         </dl>
         <button
@@ -48,6 +48,5 @@ function GameCard(props) {
     </article>
   );
 }
- 
+
 export default GameCard;
- 

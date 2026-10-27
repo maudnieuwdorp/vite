@@ -1,90 +1,80 @@
 [
   {
     "id": 1,
-    "title": "⛏️ Minecraft",
-    "platform": "PC",
-    "genre": "Sandbox",
-    "rating": 9.5,
-    "year": 2011
+    "titel": "The Legend of Zelda: Breath of the Wild",
+    "genre": "Avontuur",
+    "platform": "Nintendo Switch",
+    "rating": 9.7,
+    "jaar": 2017,
+    "afbeelding": "zelda.jpg",
+    "developer": "Nintendo EPD",
+    "multiplayer": false,
+    "speelduur": 60,
+    "leeftijd": "12+"
   },
   {
     "id": 2,
-    "title": "🏎️ Mario Kart World",
-    "platform": "Nintendo Switch 2",
-    "genre": "Race",
-    "rating": 9.3,
-    "year": 2025
+    "titel": "Elden Ring",
+    "genre": "RPG",
+    "platform": "PC",
+    "rating": 9.6,
+    "jaar": 2022,
+    "afbeelding": "eldenring.jpg",
+    "developer": "FromSoftware",
+    "multiplayer": true,
+    "speelduur": 90,
+    "leeftijd": "16+"
   },
   {
     "id": 3,
-    "title": "🚗 Rocket League",
-    "platform": "PlayStation 5",
-    "genre": "Sport",
-    "rating": 8.9,
-    "year": 2015
+    "titel": "Minecraft",
+    "genre": "Sandbox",
+    "platform": "PC",
+    "rating": 9.0,
+    "jaar": 2011,
+    "afbeelding": "minecraft.jpg",
+    "developer": "Mojang Studios",
+    "multiplayer": true,
+    "speelduur": 200,
+    "leeftijd": "7+"
   },
   {
     "id": 4,
-    "title": "⚽ EA Sports FC 26",
+    "titel": "God of War Ragnarök",
+    "genre": "Actie-avontuur",
     "platform": "PlayStation 5",
-    "genre": "Sport",
-    "rating": 8.6,
-    "year": 2025
+    "rating": 9.4,
+    "jaar": 2022,
+    "afbeelding": "gow.jpg",
+    "developer": "Santa Monica Studio",
+    "multiplayer": false,
+    "speelduur": 40,
+    "leeftijd": "18+"
   },
   {
     "id": 5,
-    "title": "🗡️ The Legend of Zelda",
-    "platform": "Nintendo Switch",
-    "genre": "Adventure",
-    "rating": 9.8,
-    "year": 2023
+    "titel": "Hollow Knight",
+    "genre": "Metroidvania",
+    "platform": "PC",
+    "rating": 9.2,
+    "jaar": 2017,
+    "afbeelding": "hollowknight.jpg",
+    "developer": "Team Cherry",
+    "multiplayer": false,
+    "speelduur": 35,
+    "leeftijd": "7+"
   },
   {
     "id": 6,
-    "title": "🚌 Fortnite",
-    "platform": "PC",
-    "genre": "Battle Royale",
-    "rating": 8.7,
-    "year": 2017
-  },
-  {
-    "id": 7,
-    "title": "🤖 Cyberpunk 2077",
-    "platform": "PC",
-    "genre": "RPG",
-    "rating": 8.8,
-    "year": 2020
-  },
-  {
-    "id": 8,
-    "title": "🤠 Red Dead Redemption 2",
-    "platform": "PC",
-    "genre": "Adventure",
-    "rating": 9.9,
-    "year": 2018
-  },
-  {
-    "id": 9,
-    "title": "🚔 GTA V",
-    "platform": "PC",
-    "genre": "Action",
-    "rating": 9.8,
-    "year": 2013
-  },
-  {
-    "id": 10,
-    "title": "👑 Elden Ring",
+    "titel": "FIFA 24",
+    "genre": "Sport",
     "platform": "PlayStation 5",
-    "genre": "RPG",
-    "rating": 9.7,
-    "year": 2022
-  },
-  {
-    "id": 11,
-    "title": "🚀 ROC Amstelland Dev Challenge",
-    "platform": "ESP32 / Raspberry Pi / Arduino",
-    "genre": "Developer Event",
-    "rating": 10.0,
-    "year": 2027
+    "rating": 7.8,
+    "jaar": 2023,
+    "afbeelding": "fifa24.jpg",
+    "developer": "EA Sports",
+    "multiplayer": true,
+    "speelduur": 50,
+    "leeftijd": "3+"
   }
 ]

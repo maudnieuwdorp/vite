@@ -3,17 +3,17 @@ import "./App.css";
 import Footer from "./components/Footer";
 import GameCard from "./components/GameCard";
 import gamesData from "./components/data/games.json";
- 
+
 function App() {
   const [search, setSearch] = useState("");
   const [games] = useState(gamesData);
   const searchTerm = search.trim().toLowerCase();
   const filteredGames = games.filter((game) =>
-    [game.title, game.genre, game.platform, game.developer].some((value) =>
+    [game.titel, game.genre, game.platform, game.developer].some((value) =>
       String(value ?? "").toLowerCase().includes(searchTerm)
     )
   );
- 
+
   return (
     <div className="app-container">
       <header className="site-header">
@@ -23,7 +23,7 @@ function App() {
           Favoriete werelden, verzameld op één plek.
         </p>
       </header>
- 
+
       <input
         className="search-input"
         type="text"
@@ -32,25 +32,25 @@ function App() {
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
- 
+
       <p className="results-count" aria-live="polite">
         {filteredGames.length} {filteredGames.length === 1 ? "game" : "games"}
         {searchTerm && " gevonden"}
       </p>
- 
+
       <div className="games-list">
         {filteredGames.length > 0 ? (
           filteredGames.map((game) => (
             <GameCard
               key={game.id}
-              title={game.title}
+              title={game.titel}
               platform={game.platform}
               genre={game.genre}
               developer={game.developer}
               multiplayer={game.multiplayer}
               rating={game.rating}
-              year={game.year}
-              image={game.image}
+              jaar={game.jaar}
+              image={game.afbeelding}
             />
           ))
         ) : (
@@ -59,11 +59,10 @@ function App() {
           </p>
         )}
       </div>
- 
+
       <Footer />
     </div>
   );
 }
- 
+
 export default App;
- 
